@@ -3,7 +3,8 @@
 export const estado = {
   conteudo: null,   // dados de data/conteudo.json
   respostas: [],    // índice da opção escolhida em cada pergunta
-  perfil: null      // perfil calculado ao final do quiz
+  perfil: null,     // perfil calculado ao final do quiz
+  tela: null        // nome da tela aberta
 };
 
 const telas = {};
@@ -18,8 +19,10 @@ export function irPara(nome) {
     console.error(`Tela "${nome}" não existe.`);
     return;
   }
+  document.querySelectorAll(".cartao-fundo").forEach((c) => c.remove());
   const app = document.getElementById("app");
   app.innerHTML = "";
+  estado.tela = nome;
   renderizar(app);
   window.scrollTo(0, 0);
 }
