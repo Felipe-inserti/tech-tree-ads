@@ -15,7 +15,8 @@ desenvolvimento. O planejamento completo está em `docs/planejamento.md`.
 ```
 index.html            página única da aplicação
 css/style.css         estilos
-js/app.js             carregamento do conteúdo e troca de telas
+js/app.js             carregamento do conteúdo e tela inicial
+js/navegacao.js       estado compartilhado e troca de telas
 js/quiz.js            quiz e cálculo do perfil
 js/arvore.js          árvore de habilidades
 data/conteudo.json    perfis, perguntas e disciplinas
