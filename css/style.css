@@ -1,0 +1,100 @@
+/* Tech-Tree ADS - estilos base (identidade visual completa na Sprint 4) */
+
+:root {
+  --fundo: #0f1226;
+  --superficie: #1b1f3b;
+  --texto: #f2f3f8;
+  --texto-suave: #a9adc8;
+  --destaque: #5ee6a8;
+  --destaque-escuro: #2bb37a;
+  --raio: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+#app {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.tela {
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--destaque);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.subtitulo {
+  font-size: 1.25rem;
+  color: var(--texto-suave);
+}
+
+.rodape {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+/* Botões grandes para toque em tablet (mínimo 48px de altura) */
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--raio);
+  min-height: 56px;
+  padding: 12px 32px;
+}
+
+.botao-principal {
+  background: var(--destaque);
+  color: var(--fundo);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.botao-principal:active {
+  background: var(--destaque-escuro);
+}
+
+.botao-secundario {
+  background: transparent;
+  color: var(--texto);
+  border: 2px solid var(--texto-suave);
+}
+
+.carregando,
+.erro {
+  color: var(--texto-suave);
+}

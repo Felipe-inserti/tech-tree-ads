@@ -1,0 +1,80 @@
+{
+  "perfis": [
+    {
+      "id": "dados",
+      "nome": "Arquiteto de Dados",
+      "descricao": "Você gosta de encontrar padrões e transformar números em decisões."
+    },
+    {
+      "id": "frontend",
+      "nome": "Desenvolvedor Front-End",
+      "descricao": "Você quer criar o que as pessoas veem e tocam na tela."
+    },
+    {
+      "id": "backend",
+      "nome": "Desenvolvedor Back-End",
+      "descricao": "Você curte fazer as coisas funcionarem por trás dos panos."
+    },
+    {
+      "id": "seguranca",
+      "nome": "Especialista em Segurança",
+      "descricao": "Você pensa como um hacker, mas para proteger os sistemas."
+    }
+  ],
+
+  "perguntas": [
+    {
+      "texto": "Num jogo, o que você mais curte?",
+      "opcoes": [
+        { "texto": "Ver as estatísticas e montar a melhor estratégia", "perfis": ["dados"] },
+        { "texto": "O visual, os menus e a interface", "perfis": ["frontend"] },
+        { "texto": "Entender como o servidor online funciona", "perfis": ["backend"] },
+        { "texto": "Descobrir bugs e segredos escondidos", "perfis": ["seguranca"] }
+      ]
+    },
+    {
+      "texto": "Qual tarefa parece mais divertida?",
+      "opcoes": [
+        { "texto": "Criar um gráfico que explique um problema", "perfis": ["dados"] },
+        { "texto": "Desenhar a tela de um aplicativo", "perfis": ["frontend"] },
+        { "texto": "Fazer um app guardar e buscar informações", "perfis": ["backend"] },
+        { "texto": "Proteger uma conta contra invasões", "perfis": ["seguranca"] }
+      ]
+    }
+  ],
+
+  "disciplinas": [
+    {
+      "id": "algoritmos",
+      "nome": "Algoritmos e Programação",
+      "semestre": 1,
+      "prerequisitos": [],
+      "perfis": ["dados", "frontend", "backend", "seguranca"],
+      "texto": "Seu primeiro poder: ensinar o computador a resolver problemas passo a passo."
+    },
+    {
+      "id": "banco-de-dados",
+      "nome": "Banco de Dados",
+      "semestre": 2,
+      "prerequisitos": ["algoritmos"],
+      "perfis": ["dados", "backend"],
+      "texto": "Aprenda a guardar milhões de registros e encontrar qualquer um em milissegundos."
+    },
+    {
+      "id": "programacao-web",
+      "nome": "Programação para a Web",
+      "semestre": 3,
+      "prerequisitos": ["algoritmos"],
+      "perfis": ["frontend", "backend"],
+      "texto": "Construa sites e aplicações que qualquer pessoa acessa pelo navegador."
+    },
+    {
+      "id": "redes",
+      "nome": "Redes de Computadores",
+      "semestre": 3,
+      "prerequisitos": ["algoritmos"],
+      "perfis": ["backend", "seguranca"],
+      "texto": "Descubra como uma mensagem sai do seu celular e chega do outro lado do mundo."
+    }
+  ]
+}
