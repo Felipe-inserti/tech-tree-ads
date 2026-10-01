@@ -36,7 +36,10 @@ registrarTela("quiz", (container) => {
       <p class="contador">Pergunta ${atual + 1} de ${perguntas.length}</p>
       <h2>${pergunta.texto}</h2>
       <div class="opcoes"></div>
-      <button class="botao-secundario" id="recomecar">Recomeçar</button>
+      <div class="acoes">
+        ${atual > 0 ? '<button class="botao-secundario" id="voltar">Voltar</button>' : ""}
+        <button class="botao-secundario" id="recomecar">Recomeçar</button>
+      </div>
     </section>
   `;
 
@@ -50,6 +53,10 @@ registrarTela("quiz", (container) => {
   });
 
   container.querySelector("#recomecar").addEventListener("click", reiniciar);
+  container.querySelector("#voltar")?.addEventListener("click", () => {
+    estado.respostas.pop();
+    irPara("quiz");
+  });
 });
 
 function responder(indiceOpcao) {

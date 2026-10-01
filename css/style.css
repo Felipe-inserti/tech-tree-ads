@@ -28,6 +28,12 @@ body {
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
+  /* Evita zoom acidental com toque duplo no tablet */
+  touch-action: manipulation;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(94, 230, 168, 0.08), transparent 40%),
+    radial-gradient(circle at 85% 90%, rgba(110, 120, 255, 0.08), transparent 45%);
+  background-attachment: fixed;
 }
 
 #app {
@@ -39,6 +45,7 @@ body {
 }
 
 .tela {
+  animation: entrar 0.3s ease-out;
   width: 100%;
   max-width: 720px;
   text-align: center;
@@ -46,6 +53,17 @@ body {
   flex-direction: column;
   gap: 24px;
   align-items: center;
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 h1 {
@@ -62,6 +80,28 @@ h2 {
   color: var(--texto-suave);
 }
 
+.selo {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--destaque);
+  border: 1px solid rgba(94, 230, 168, 0.4);
+  border-radius: 999px;
+  padding: 4px 14px;
+}
+
+.perfis-icones {
+  display: flex;
+  gap: 16px;
+  font-size: 2.5rem;
+}
+
+.botao-grande {
+  font-size: 1.5rem;
+  min-height: 72px;
+  padding: 16px 64px;
+}
+
 .rodape {
   font-size: 0.9rem;
   color: var(--texto-suave);
@@ -72,9 +112,14 @@ button {
   font: inherit;
   border: none;
   cursor: pointer;
+  transition: transform 0.1s, background 0.15s, border-color 0.15s;
   border-radius: var(--raio);
   min-height: 56px;
   padding: 12px 32px;
+}
+
+button:active {
+  transform: scale(0.97);
 }
 
 .botao-principal {
@@ -138,6 +183,12 @@ button {
   .opcoes {
     grid-template-columns: 1fr;
   }
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
 }
 
 /* Resultado */
@@ -245,6 +296,7 @@ button {
 }
 
 .cartao {
+  animation: entrar 0.2s ease-out;
   background: var(--superficie);
   border: 2px solid var(--destaque);
   border-radius: var(--raio);
