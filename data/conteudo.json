@@ -1,24 +1,34 @@
 {
+  "fonte": "Projeto Pedagógico do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas - FT/Unicamp, 2026",
+
   "perfis": [
     {
       "id": "dados",
-      "nome": "Arquiteto de Dados",
-      "descricao": "Você gosta de encontrar padrões e transformar números em decisões."
+      "nome": "Cientista de Dados e IA",
+      "icone": "📊",
+      "descricao": "Você gosta de encontrar padrões e transformar números em decisões. Seu caminho leva a dados, estatística e inteligência artificial.",
+      "carreiras": ["Cientista de Dados", "Analista de Dados", "Engenheiro de Machine Learning"]
     },
     {
-      "id": "frontend",
-      "nome": "Desenvolvedor Front-End",
-      "descricao": "Você quer criar o que as pessoas veem e tocam na tela."
+      "id": "apps",
+      "nome": "Desenvolvedor de Apps e Interfaces",
+      "icone": "📱",
+      "descricao": "Você quer criar o que as pessoas veem e tocam na tela. Seu caminho leva a sites, aplicativos e experiência do usuário.",
+      "carreiras": ["Desenvolvedor Front-End", "Desenvolvedor Mobile", "Designer de UX/UI"]
     },
     {
       "id": "backend",
       "nome": "Desenvolvedor Back-End",
-      "descricao": "Você curte fazer as coisas funcionarem por trás dos panos."
+      "icone": "⚙️",
+      "descricao": "Você curte fazer as coisas funcionarem por trás dos panos. Seu caminho leva a sistemas, bancos de dados e arquitetura de software.",
+      "carreiras": ["Desenvolvedor Back-End", "Engenheiro de Software", "Analista de Sistemas"]
     },
     {
-      "id": "seguranca",
-      "nome": "Especialista em Segurança",
-      "descricao": "Você pensa como um hacker, mas para proteger os sistemas."
+      "id": "infra",
+      "nome": "Especialista em Infraestrutura e Segurança",
+      "icone": "🛡️",
+      "descricao": "Você quer entender como os computadores e as redes funcionam de verdade, e como protegê-los.",
+      "carreiras": ["Analista de Redes", "Engenheiro de Cloud e DevOps", "Analista de Segurança"]
     }
   ],
 
@@ -27,54 +37,137 @@
       "texto": "Num jogo, o que você mais curte?",
       "opcoes": [
         { "texto": "Ver as estatísticas e montar a melhor estratégia", "perfis": ["dados"] },
-        { "texto": "O visual, os menus e a interface", "perfis": ["frontend"] },
-        { "texto": "Entender como o servidor online funciona", "perfis": ["backend"] },
-        { "texto": "Descobrir bugs e segredos escondidos", "perfis": ["seguranca"] }
+        { "texto": "O visual, os menus e as animações", "perfis": ["apps"] },
+        { "texto": "Entender como o modo online funciona", "perfis": ["backend"] },
+        { "texto": "Descobrir bugs e segredos escondidos", "perfis": ["infra"] }
       ]
     },
     {
       "texto": "Qual tarefa parece mais divertida?",
       "opcoes": [
         { "texto": "Criar um gráfico que explique um problema", "perfis": ["dados"] },
-        { "texto": "Desenhar a tela de um aplicativo", "perfis": ["frontend"] },
+        { "texto": "Desenhar a tela de um aplicativo", "perfis": ["apps"] },
         { "texto": "Fazer um app guardar e buscar informações", "perfis": ["backend"] },
-        { "texto": "Proteger uma conta contra invasões", "perfis": ["seguranca"] }
+        { "texto": "Proteger uma conta contra invasões", "perfis": ["infra"] }
+      ]
+    },
+    {
+      "texto": "Na escola, qual matéria você aguenta melhor?",
+      "opcoes": [
+        { "texto": "Matemática", "perfis": ["dados"] },
+        { "texto": "Artes", "perfis": ["apps"] },
+        { "texto": "Física, montar e entender como as coisas funcionam", "perfis": ["infra"] },
+        { "texto": "Qualquer uma que tenha lógica e resolução de problemas", "perfis": ["backend"] }
+      ]
+    },
+    {
+      "texto": "O Wi-Fi da sua casa caiu. O que você faz?",
+      "opcoes": [
+        { "texto": "Reinicio o roteador e tento descobrir o que deu errado", "perfis": ["infra"] },
+        { "texto": "Fico curioso para saber quantas vezes isso acontece por mês", "perfis": ["dados"] },
+        { "texto": "Penso que o app da operadora devia avisar melhor", "perfis": ["apps"] },
+        { "texto": "Penso em como funciona o sistema que liga tudo isso", "perfis": ["backend"] }
+      ]
+    },
+    {
+      "texto": "Qual dessas criações você mais gostaria de ter feito?",
+      "opcoes": [
+        { "texto": "O algoritmo que recomenda vídeos no YouTube", "perfis": ["dados"] },
+        { "texto": "O visual do Instagram", "perfis": ["apps"] },
+        { "texto": "O sistema que processa os pedidos do iFood", "perfis": ["backend"] },
+        { "texto": "A proteção que impede hackers de invadir um banco", "perfis": ["infra"] }
+      ]
+    },
+    {
+      "texto": "Num trabalho em grupo, você normalmente...",
+      "opcoes": [
+        { "texto": "Organiza as informações e as pesquisas", "perfis": ["dados"] },
+        { "texto": "Cuida da apresentação e do visual dos slides", "perfis": ["apps"] },
+        { "texto": "Divide as tarefas e junta as partes de todo mundo", "perfis": ["backend"] },
+        { "texto": "Resolve os problemas técnicos quando algo trava", "perfis": ["infra"] }
+      ]
+    },
+    {
+      "texto": "Qual notícia de tecnologia mais chama sua atenção?",
+      "opcoes": [
+        { "texto": "Uma nova inteligência artificial", "perfis": ["dados"] },
+        { "texto": "O lançamento de um app que todo mundo está usando", "perfis": ["apps"] },
+        { "texto": "Um site enorme que saiu do ar por horas", "perfis": ["backend"] },
+        { "texto": "Um vazamento de dados de milhões de pessoas", "perfis": ["infra"] }
+      ]
+    },
+    {
+      "texto": "Se você tivesse uma startup, ela faria...",
+      "opcoes": [
+        { "texto": "Previsões usando dados", "perfis": ["dados"] },
+        { "texto": "Um aplicativo bonito e fácil de usar", "perfis": ["apps"] },
+        { "texto": "Uma plataforma que aguenta milhões de usuários", "perfis": ["backend"] },
+        { "texto": "Proteção contra ataques digitais", "perfis": ["infra"] }
       ]
     }
   ],
 
   "disciplinas": [
-    {
-      "id": "algoritmos",
-      "nome": "Algoritmos e Programação",
-      "semestre": 1,
-      "prerequisitos": [],
-      "perfis": ["dados", "frontend", "backend", "seguranca"],
-      "texto": "Seu primeiro poder: ensinar o computador a resolver problemas passo a passo."
-    },
-    {
-      "id": "banco-de-dados",
-      "nome": "Banco de Dados",
-      "semestre": 2,
-      "prerequisitos": ["algoritmos"],
-      "perfis": ["dados", "backend"],
-      "texto": "Aprenda a guardar milhões de registros e encontrar qualquer um em milissegundos."
-    },
-    {
-      "id": "programacao-web",
-      "nome": "Programação para a Web",
-      "semestre": 3,
-      "prerequisitos": ["algoritmos"],
-      "perfis": ["frontend", "backend"],
-      "texto": "Construa sites e aplicações que qualquer pessoa acessa pelo navegador."
-    },
-    {
-      "id": "redes",
-      "nome": "Redes de Computadores",
-      "semestre": 3,
-      "prerequisitos": ["algoritmos"],
-      "perfis": ["backend", "seguranca"],
-      "texto": "Descubra como uma mensagem sai do seu celular e chega do outro lado do mundo."
-    }
+    { "id": "SI100", "nome": "Algoritmos e Programação de Computadores I", "semestre": 1, "base": [], "perfis": ["dados", "apps", "backend", "infra"],
+      "texto": "Seu primeiro poder: ensinar o computador a resolver problemas passo a passo. Tudo no curso começa aqui." },
+    { "id": "SI220", "nome": "Matemática Discreta", "semestre": 1, "base": [], "perfis": ["dados", "infra"],
+      "texto": "A matemática por trás da lógica, das senhas e da criptografia que protege suas mensagens." },
+    { "id": "TT106", "nome": "Organização e Arquitetura de Computadores", "semestre": 1, "base": [], "perfis": ["infra"],
+      "texto": "Abra o computador por dentro e descubra como o processador e a memória realmente funcionam." },
+    { "id": "SI103", "nome": "Lab. de Ferramentas de Programação", "semestre": 1, "base": [], "perfis": ["backend", "infra"],
+      "texto": "Domine as ferramentas que todo programador usa no dia a dia, como o terminal e o Git." },
+
+    { "id": "SI204", "nome": "Algoritmos e Programação de Computadores II", "semestre": 2, "base": ["SI100"], "perfis": ["dados", "apps", "backend", "infra"],
+      "texto": "Suba de nível: programas maiores, mais organizados e que resolvem problemas de verdade." },
+    { "id": "ST211", "nome": "Estatística", "semestre": 2, "base": [], "perfis": ["dados"],
+      "texto": "Aprenda a tirar conclusões de dados, como fazem as pesquisas eleitorais e os apps de previsão." },
+    { "id": "SI206", "nome": "Engenharia de Software I", "semestre": 2, "base": ["SI100"], "perfis": ["backend", "apps"],
+      "texto": "Como grandes empresas planejam e constroem softwares em equipe sem virar bagunça." },
+    { "id": "SI305", "nome": "Análise de Sistemas de Informação I", "semestre": 2, "base": [], "perfis": ["backend"],
+      "texto": "Entenda o problema do cliente antes de escrever código: o segredo de todo sistema que dá certo." },
+
+    { "id": "SI300", "nome": "Programação Orientada a Objetos I", "semestre": 3, "base": ["SI204"], "perfis": ["apps", "backend"],
+      "texto": "Organize o código como peças de LEGO que se encaixam. É assim que se fazem jogos e apps grandes." },
+    { "id": "ST567", "nome": "Banco de Dados I", "semestre": 3, "base": ["SI204"], "perfis": ["dados", "backend"],
+      "texto": "Guarde milhões de registros e encontre qualquer um em milissegundos, como faz o seu banco." },
+    { "id": "SI404", "nome": "Introdução a Interfaces Humano-Computador", "semestre": 3, "base": [], "perfis": ["apps"],
+      "texto": "Descubra por que alguns apps são fáceis de usar e outros dão vontade de jogar o celular longe." },
+    { "id": "SI306", "nome": "Matemática para Ciência de Dados", "semestre": 3, "base": ["ST211"], "perfis": ["dados"],
+      "texto": "A matemática que faz a inteligência artificial aprender. Sem fórmulas decoradas, com aplicação real." },
+    { "id": "SI304", "nome": "Engenharia de Software II", "semestre": 3, "base": ["SI206"], "perfis": ["backend"],
+      "texto": "Testes, qualidade e boas práticas para que o software não quebre quando milhões de pessoas usarem." },
+
+    { "id": "SI201", "nome": "Estrutura de Dados I", "semestre": 4, "base": ["SI204"], "perfis": ["dados", "backend", "infra"],
+      "texto": "As formas inteligentes de organizar informação que deixam o Google e o GPS rápidos." },
+    { "id": "SI400", "nome": "Programação Orientada a Objetos II", "semestre": 4, "base": ["SI300"], "perfis": ["apps", "backend"],
+      "texto": "Construa sistemas completos e reaproveitáveis, do jeito que as empresas de tecnologia fazem." },
+    { "id": "TT304", "nome": "Sistemas Operacionais", "semestre": 4, "base": ["TT106"], "perfis": ["infra"],
+      "texto": "Como o Windows, o Linux e o Android conseguem rodar dezenas de programas ao mesmo tempo." },
+    { "id": "ST767", "nome": "Banco de Dados II", "semestre": 4, "base": ["ST567"], "perfis": ["dados", "backend"],
+      "texto": "Bancos de dados gigantes, rápidos e seguros, prontos para aguentar uma Black Friday." },
+    { "id": "SI401", "nome": "Programação para a Web", "semestre": 4, "base": ["SI300"], "perfis": ["apps", "backend"],
+      "texto": "Crie sites e sistemas que qualquer pessoa acessa pelo navegador. Este app foi feito assim!" },
+    { "id": "SI406", "nome": "Atividades Práticas em Interação Humano-Computador", "semestre": 4, "base": ["SI404"], "perfis": ["apps"],
+      "texto": "Projete e teste interfaces com pessoas reais da comunidade, fora da sala de aula." },
+
+    { "id": "ST568", "nome": "Redes de Comunicação I", "semestre": 5, "base": ["TT304"], "perfis": ["infra", "backend"],
+      "texto": "Descubra o caminho que uma mensagem faz do seu celular até o outro lado do mundo." },
+    { "id": "SI702", "nome": "Inteligência Artificial", "semestre": 5, "base": ["SI201"], "perfis": ["dados"],
+      "texto": "Crie programas que tomam decisões sozinhos, como os adversários dos games e os assistentes virtuais." },
+    { "id": "SI010", "nome": "Estrutura de Dados II", "semestre": 5, "base": ["SI201"], "perfis": ["dados", "backend"],
+      "texto": "Estruturas avançadas para resolver problemas enormes, como rotas de entrega e redes sociais." },
+    { "id": "TT060", "nome": "Gestão de Projetos", "semestre": 5, "base": [], "perfis": ["backend", "apps"],
+      "texto": "Prazo, equipe e orçamento: como tirar uma ideia do papel e entregar no prazo." },
+    { "id": "SI503", "nome": "Projeto Integrador", "semestre": 5, "base": ["SI400", "ST767"], "perfis": ["dados", "apps", "backend", "infra"],
+      "texto": "Junte tudo o que aprendeu e construa um sistema completo do zero, em equipe." },
+
+    { "id": "SI700", "nome": "Programação para Dispositivos Móveis", "semestre": 6, "base": ["SI400"], "perfis": ["apps"],
+      "texto": "Crie seu próprio aplicativo para celular e coloque na mão das pessoas." },
+    { "id": "SI602", "nome": "Introdução ao Aprendizado de Máquina", "semestre": 6, "base": ["SI702", "SI306"], "perfis": ["dados"],
+      "texto": "Ensine o computador a aprender com exemplos, como fazem o reconhecimento facial e o ChatGPT." },
+    { "id": "SI603", "nome": "Processamento Paralelo e Distribuído", "semestre": 6, "base": ["TT304", "ST568"], "perfis": ["infra", "backend"],
+      "texto": "Faça vários computadores trabalharem juntos, como a nuvem que roda Netflix e Spotify." },
+    { "id": "SI800", "nome": "Empreendedorismo e Inovação", "semestre": 6, "base": [], "perfis": ["dados", "apps", "backend", "infra"],
+      "texto": "Transforme uma ideia em startup: do problema ao modelo de negócio." }
   ]
 }
