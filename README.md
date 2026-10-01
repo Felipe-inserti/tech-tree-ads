@@ -19,9 +19,11 @@ js/app.js             carregamento do conteúdo e tela inicial
 js/navegacao.js       estado compartilhado e troca de telas
 js/quiz.js            quiz e cálculo do perfil
 js/arvore.js          árvore de habilidades
+js/quiosque.js        volta ao início após 60 s sem toque
+js/versao.js          recarrega o site quando há versão nova
 data/conteudo.json    perfis, perguntas e disciplinas
-design/               telas do protótipo
-docs/                 testes e inspeção heurística
+design/               QR code para o estande
+docs/                 planejamento, diagnóstico, inspeção heurística e testes
 ```
 
 Todo o conteúdo fica em `data/conteudo.json`: para mudar textos, perguntas ou disciplinas,
