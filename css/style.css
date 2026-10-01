@@ -161,6 +161,137 @@ button {
   font-size: 0.95rem;
 }
 
+/* Árvore de habilidades */
+.tela-arvore {
+  max-width: 1100px;
+}
+
+.arvore {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.arvore-linhas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.arvore-linhas path {
+  fill: none;
+  stroke: var(--destaque);
+  stroke-width: 2;
+  opacity: 0.6;
+}
+
+.semestre {
+  position: relative;
+}
+
+.semestre-nome {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 10px;
+  background: var(--fundo);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--texto-suave);
+  margin-bottom: 8px;
+}
+
+.semestre-nos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.no {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  min-height: 72px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  background: var(--fundo);
+  color: #5b6085;
+  border: 2px solid #1c2040;
+}
+
+.no.ativo {
+  color: var(--texto);
+  background: var(--superficie);
+  border-color: var(--destaque);
+  box-shadow: 0 0 16px rgba(94, 230, 168, 0.25);
+}
+
+/* Cartão da disciplina */
+.cartao-fundo {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 20, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 10;
+}
+
+.cartao {
+  background: var(--superficie);
+  border: 2px solid var(--destaque);
+  border-radius: var(--raio);
+  max-width: 520px;
+  width: 100%;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+.cartao h2 {
+  font-size: 1.5rem;
+}
+
+.cartao-texto {
+  font-size: 1.15rem;
+}
+
+.cartao-perfis {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.cartao-perfis li {
+  background: var(--fundo);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .no {
+    width: calc(50% - 6px);
+  }
+
+  /* No celular as disciplinas quebram em várias linhas e as ligações ficariam confusas */
+  .arvore-linhas {
+    display: none;
+  }
+}
+
 .carregando,
 .erro {
   color: var(--texto-suave);
