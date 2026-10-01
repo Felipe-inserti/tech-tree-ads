@@ -1,7 +1,8 @@
 // Ponto de entrada da aplicação: carrega o conteúdo e abre a tela inicial.
 
-import { estado, registrarTela, irPara, reiniciar } from "./navegacao.js";
+import { estado, registrarTela, irPara } from "./navegacao.js";
 import "./quiz.js";
+import "./arvore.js";
 
 // Tela inicial
 registrarTela("inicio", (container) => {
@@ -17,17 +18,6 @@ registrarTela("inicio", (container) => {
   `;
 
   container.querySelector("#comecar").addEventListener("click", () => irPara("quiz"));
-});
-
-// Árvore de habilidades: implementada na Sprint 4
-registrarTela("arvore", (container) => {
-  container.innerHTML = `
-    <section class="tela">
-      <h2>Árvore em construção</h2>
-      <button class="botao-secundario" id="voltar">Recomeçar</button>
-    </section>
-  `;
-  container.querySelector("#voltar").addEventListener("click", reiniciar);
 });
 
 async function iniciar() {
